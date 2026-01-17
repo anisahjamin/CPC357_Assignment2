@@ -124,3 +124,44 @@ The system follows a **Four-Layer IoT Architecture**:
 - Install dependencies:
 ```bash
 pip install paho-mqtt firebase-admin
+```
+
+- Run the bridge:
+```bash
+python3 bridge.py
+```
+#### C. Dashboard
+
+- Run the Streamlit dashboard locally or deploy it to Streamlit Cloud:
+```bash
+streamlit run dashboard.py
+```
+## 📊 Usage
+
+- Power on the ESP32 device
+
+- The device automatically connects to WiFi and the MQTT broker
+
+- Apply water to the rain sensor to simulate rainfall
+
+- Observe the system behavior:
+
+- Servo motor actuates immediately
+
+- bridge.py logs show "Data saved to Firebase"
+
+- Streamlit dashboard updates rain level and status
+
+## 🔒 Security Measures
+
+- **TLS Encryption**
+  All MQTT traffic is encrypted to prevent eavesdropping and tampering.
+
+- **Firewall Restrictions**
+  Only the required port (8883) is exposed on the GCP VM.
+
+- **Service Isolation**
+  The ESP32 acts solely as a publisher and does not store database credentials.
+
+- **Secure Credential Storage**
+  Firebase service account credentials are stored only on the secure cloud server.
