@@ -123,7 +123,7 @@ if df['timestamp'].isna().all():
     df['timestamp'] = range(len(df))
 
 # ================= METRICS CARD =================
-#st.markdown('<div class="card">', unsafe_allow_html=True)
+
 # ================= UNIFIED METRICS BOX =================
 st.subheader("📌 Current Rain Information")
 
@@ -132,8 +132,7 @@ avg_value = df['rain_value'].mean()
 current_status = df['status'].iloc[-1]
 emoji = "🌧️" if "rain" in str(current_status).lower() else "☀️"
 
-# NOTE: The HTML below is pushed to the left (no indentation) to prevent
-# Streamlit from thinking it is a code block.
+
 st.markdown(f"""
 <div class="metrics-container">
     <div class="metric-item">
@@ -154,7 +153,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ================= LINE CHART =================
-#st.markdown('<div class="card">', unsafe_allow_html=True)
+
 st.subheader("📈 Rain Level Over Time")
 
 fig = go.Figure()
@@ -184,7 +183,7 @@ col_left, col_right = st.columns(2)
 
 # ---- Rain Distribution ----
 with col_left:
-    #st.markdown('<div class="card">', unsafe_allow_html=True)
+    
     st.subheader("🔄 Rain Status Distribution")
 
     status_counts = df['status'].value_counts().reset_index()

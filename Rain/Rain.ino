@@ -13,7 +13,7 @@ const char* ssid = "cs-mtg-room";
 const char* password = "bilik703";
 
 // --- MQTT Broker ---
-const char* mqtt_server = "136.114.158.4"; // Your VM IP
+const char* mqtt_server = "136.114.158.4"; 
 const int mqtt_port = 8883;
 const char* mqtt_user = "myuser";
 const char* mqtt_pass = "fatinaina";
