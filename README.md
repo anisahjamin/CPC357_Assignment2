@@ -137,16 +137,15 @@ python3 bridge.py
 streamlit run dashboard.py
 ```
 ## 📊 Usage
+1.  Power on the ESP32 device
 
-- Power on the ESP32 device
+2.  The device automatically connects to WiFi and the MQTT broker
 
-- The device automatically connects to WiFi and the MQTT broker
+3.  Apply water to the rain sensor to simulate rainfall
 
-- Apply water to the rain sensor to simulate rainfall
+4.  Observe the system behavior:
 
-- Observe the system behavior:
-
-- Servo motor actuates immediately
+-  Servo motor actuates immediately
 
 - bridge.py logs show "Data saved to Firebase"
 
