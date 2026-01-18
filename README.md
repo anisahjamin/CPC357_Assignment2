@@ -145,11 +145,11 @@ streamlit run dashboard.py
 
 4.  Observe the system behavior:
 
--  Servo motor actuates immediately
-
-- bridge.py logs show "Data saved to Firebase"
-
-- Streamlit dashboard updates rain level and status
+  -  Servo motor actuates immediately
+  
+  - bridge.py logs show "Data saved to Firebase"
+  
+  - Streamlit dashboard updates rain level and status
 
 ## 🔒 Security Measures
 
